@@ -49,7 +49,7 @@ jobs:
             -DwxBUILD_SAMPLES=OFF ^
             -DwxBUILD_TESTS=OFF ^
             -DwxBUILD_DEMOS=OFF ^
-            -DwxBUILD_BENCHMARKS=OFF
+            -DwxBUILD_BENCHMARKS=OFF ^
             -DCMAKE_INSTALL_PREFIX="cmake-build/${{ env.cmakeInstallationPath }}" -B./cmake-build &&^
             cd cmake-build && cmake --build . && cmake --install . 
             
